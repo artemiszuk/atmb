@@ -7,7 +7,7 @@ export class EventRegex {
   readonly commandsRegexNoName: regexps.RegExps;
 
   constructor() {
-    var commands = ['^[/|.]start', '^[/|.](mirrorTar|mt)', '^[/|.](mirror|m)', '^[/|.](mirrorStatus|ms)', '^[/|.](list|l)', '^[/|.](getFolder|gf)', '^[/|.](cancelMirror|cm)', '^[/|.](cancelAll|ca)', '^[/|.]disk', '^[/|.](getLink|gl)', '^[/|.](clone|c)', '^[/|.]id', '^[/|.]mf', '^[/|.](tar|t)', '^[/|.](unzipMirror|um)'];
+    var commands = ['^[/|.]start', '^[/|.](tarmirror|mt)', '^[/|.](mirror|m)', '^[/|.](status|ms)', '^[/|.](list|l)', '^[/|.](getfolder|gf)', '^[/|.](cancel|cm)', '^[/|.](cancelAll|ca)', '^[/|.]disk', '^[/|.](getLink|gl)', '^[/|.](clone|c)', '^[/|.]id', '^[/|.]torrent', '^[/|.](tar|t)', '^[/|.](unzipmirror|um)'];
     var commandsNoName: string[] = [];
     var commandAfter = ['$', ' (.+)', ' (.+)', '$', ' (.+)', '$', '$', '$', '$', ' (.+)', ' (.+)', '$', '$', ' (.+)', ' (.+)'];
 
